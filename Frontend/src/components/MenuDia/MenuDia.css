@@ -1,0 +1,100 @@
+/* ============================================
+   MENÚ DEL DÍA
+   ============================================ */
+
+.menu-dia {
+  width: 100%;
+  padding: var(--space-9) 0;
+  background-color: var(--color-alter);
+}
+
+.menu-dia__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  text-align: center;
+}
+
+/* Título del menú */
+.menu-dia__titulo {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--color-txt-main);
+  margin-bottom: var(--space-2);
+}
+
+/* Precio */
+.menu-dia__precio {
+  font-family: var(--font-ui);
+  font-size: var(--text-lg);
+  color: var(--color-gold);
+  margin-bottom: var(--space-8);
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* Categoría */
+.menu-dia__categoria {
+  margin-bottom: var(--space-6);
+}
+
+.menu-dia__categoria-titulo {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: var(--space-3);
+}
+
+/* Platos */
+.menu-dia__platos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.menu-dia__plato {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-txt-alter);
+}
+
+/* Estado */
+.menu-dia__estado {
+  text-align: center;
+  padding: var(--space-9);
+  font-family: var(--font-ui);
+  color: var(--color-txt-faded);
+}
+
+.menu-dia__categoria-titulo {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-5);
+}
+
+
+.menu-dia__plato {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  color: var(--color-txt-main);
+}
+
+/* ============================================
+   RESPONSIVE — Móvil
+   ============================================ */
+@media (max-width: 768px) {
+  .menu-dia__titulo {
+    font-size: var(--text-2xl);
+  }
+
+  .menu-dia__categoria-titulo {
+    font-size: var(--text-lg);
+  }
+}

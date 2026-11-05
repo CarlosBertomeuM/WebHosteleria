@@ -1,0 +1,83 @@
+/* ============================================
+   CONTACTO
+   ============================================ */
+
+.contacto {
+  width: 100%;
+  padding: var(--space-9) 0;
+  background-color: var(--color-base);
+}
+
+.contacto__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.contacto__titulo {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--color-txt-main);
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+.contacto__subtitulo {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-txt-faded);
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+/* Disposición en dos columnas (info + mapa) */
+.contacto__contenido {
+  display: flex;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Información del restaurante */
+.contacto__info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.contacto__dato h3 {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-primary);
+  margin-bottom: var(--space-1);
+}
+
+.contacto__dato p {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-txt-alter);
+}
+
+/* Mapa */
+.contacto__mapa {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contacto__mapa iframe {
+  width: 100%;
+  display: block;
+}
+
+/* ============================================
+   RESPONSIVE — Móvil
+   ============================================ */
+@media (max-width: 768px) {
+  .contacto__titulo {
+    font-size: var(--text-2xl);
+  }
+}

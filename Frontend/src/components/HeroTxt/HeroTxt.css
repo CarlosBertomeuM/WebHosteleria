@@ -1,0 +1,124 @@
+/* ============================================
+   HERO TEXTO + IMAGEN
+   ============================================ */
+
+.hero-ti {
+  width: 100%;
+  padding: var(--space-9) 0;
+  background-color: var(--color-base);
+}
+
+.hero-ti__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-0);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+/* Versión invertida — imagen a la izquierda */
+.hero-ti--invertido .hero-ti__container {
+  flex-direction: row-reverse;
+}
+
+/* Texto */
+.hero-ti__texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.hero-ti__subtitulo {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-primary);
+}
+
+.hero-ti__titulo {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--color-txt-main);
+  line-height: 1.2;
+}
+
+.hero-ti__descripcion {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-txt-alter);
+  line-height: 1.8;
+}
+
+.hero-ti__boton {
+  align-self: flex-start;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-txt-light);
+  background-color: var(--color-primary);
+  border: none;
+  padding: var(--space-3) var(--space-6);
+  cursor: pointer;
+  transition: background var(--transition-base);
+  margin-top: var(--space-2);
+}
+
+.hero-ti__boton:hover {
+  background-color: var(--color-wine);
+}
+
+/* Imagen */
+.hero-ti__imagen-wrapper {
+  flex: 1;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-ti__imagen {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.hero-ti__imagen:hover {
+  transform: scale(1.03);
+}
+
+/* Sección con fondo alternativo */
+.hero-ti--alter {
+  background-color: var(--color-alter);
+}
+
+/* ============================================
+   RESPONSIVE — Móvil
+   ============================================ */
+@media (max-width: 768px) {
+  .hero-ti__container {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .hero-ti--invertido .hero-ti__container {
+    flex-direction: column;
+  }
+
+  .hero-ti__titulo {
+    font-size: var(--text-2xl);
+  }
+
+  .hero-ti__imagen {
+    height: 300px;
+  }
+
+  .hero-ti__boton {
+    align-self: stretch;
+    text-align: center;
+  }
+}

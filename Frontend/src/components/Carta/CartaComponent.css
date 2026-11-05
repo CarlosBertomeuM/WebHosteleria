@@ -1,0 +1,103 @@
+/* ============================================
+   CARTA
+   ============================================ */
+
+.carta {
+  width: 100%;
+  padding: var(--space-9) 0;
+  background-color: var(--color-alter);
+}
+
+.carta__container {
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.carta__titulo {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--color-txt-main);
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+/* Categoría */
+.carta__categoria {
+  margin-bottom: var(--space-8);
+}
+
+.carta__categoria-titulo {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-5);
+}
+
+/* Platos */
+.carta__platos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.carta__plato {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.carta__plato-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.carta__plato-nombre {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  color: var(--color-txt-main);
+}
+
+.carta__plato-descripcion {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-txt-faded);
+  font-style: italic;
+}
+
+.carta__plato-precio {
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  color: var(--color-gold);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Estados */
+.carta__estado {
+  text-align: center;
+  padding: var(--space-9);
+  font-family: var(--font-ui);
+  color: var(--color-txt-faded);
+}
+
+.carta__estado--error {
+  color: var(--color-danger);
+}
+
+/* ============================================
+   RESPONSIVE — Móvil
+   ============================================ */
+@media (max-width: 768px) {
+  .carta__titulo {
+    font-size: var(--text-2xl);
+  }
+
+  .carta__categoria-titulo {
+    font-size: var(--text-lg);
+  }
+}
