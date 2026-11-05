@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Modal responsive: márgenes y scroll en móvil */
+.modal-dialog {
+  margin: 1rem;
+  max-width: calc(100% - 2rem);
+}
+
+.modal {
+  overflow-y: auto;
+}
+
+/* Modales responsive en móvil */
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 0.5rem;
+    max-width: calc(100% - 1rem);
+  }
+}
